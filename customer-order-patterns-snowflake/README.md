@@ -1,19 +1,19 @@
 This project demonstrates how to analyze customer ordering behavior using Snowflake's virtual warehouse. The objective is to identify high-return regions, evaluate repeat purchase patterns, and uncover key metrics that help understand customer lifetime value and product-level trends.
 
-Key Business Questions
+-Key Business Questions
 What are the return rate trends across different product categories?
 Which regions generate the highest revenue, and which face the highest returns?
 Are there repeat customers? What is their ordering behavior like?
 
-Tools & Technologies
+-Tools & Technologies
 Snowflake Data Warehouse
 SQL
 
- Visual Insight
+ -Visual Insight
 Regional Revenue vs Returns
 
 
-Sample SQL Queries
+-Sample SQL Queries
 1. Return Rate Trends by Product Category
 
 SELECT 
