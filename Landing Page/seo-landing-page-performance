@@ -1,1 +1,18 @@
 
+ 1. Average Metrics by Category
+SELECT Category, 
+       AVG([CTR (%)]) AS Avg_CTR, 
+       AVG([Bounce Rate (%)]) AS Avg_Bounce,
+       AVG(Conversions) AS Avg_Conversions
+FROM landing_pages
+GROUP BY Category;
+
+2. Pages with Low CTR and High Bounce Rate
+SELECT * FROM landing_pages
+WHERE [CTR (%)] < 4.0 AND [Bounce Rate (%) ] > 60;
+
+3. Conversion Rate Calculation
+SELECT Page_ID, Category, 
+       Conversions * 100.0 / Clicks AS Conversion_Rate
+FROM landing_pages
+WHERE Clicks > 0;
